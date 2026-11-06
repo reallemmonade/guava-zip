@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guava · A smarter Finder for your Mac</title>
+<meta name="description" content="Guava is a better Finder for macOS: a fast file browser, cleanup tools, and an AI bar that finds, opens and tidies your files.">
+<meta property="og:title" content="Guava · A smarter Finder for your Mac">
+<meta property="og:description" content="A fast file browser, cleanup tools, and an AI bar that finds, opens and tidies your files.">
+<meta property="og:url" content="https://guava.zip/">
+<meta name="theme-color" content="#14101c">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body class="home">
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="top">
+      <a class="brand" href="/"><span class="dot"></span>guava.zip</a>
+      <div class="links">
+        <a href="#features">Features</a>
+        <a href="#ai">AI bar</a>
+        <a href="#clean">Cleanup</a>
+        <a href="/help/">Help</a>
+        <a class="btn" href="/download/">Download</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <span class="eyebrow">For macOS 14 Sonoma and newer</span>
+      <h1>Finder, but it listens.</h1>
+      <p class="lede">Guava is a fast file browser for your Mac with an AI bar at the bottom. Ask for the file you mean, see what's eating your disk, and tidy up in one sentence.</p>
+      <div class="ctas">
+        <a class="btn" href="/download/">Download for Mac</a>
+        <a class="btn ghost" href="#features">See what it does</a>
+      </div>
+      <span class="small mono">Free · Native SwiftUI · Your files stay on your Mac</span>
+    </div>
+
+    <div class="mock" aria-label="Guava window preview">
+      <div class="bar">
+        <i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+        <span class="path">~ › Documents › Apartment</span>
+      </div>
+      <div class="body">
+        <div class="side">
+          <b>Favourites</b>
+          <span>Recents</span><span>Desktop</span><span class="on">Documents</span><span>Downloads</span>
+          <b>Clean</b>
+          <span>Junk Sweep</span><span>Big &amp; Forgotten</span><span>Twins</span><span>Space Map</span>
+        </div>
+        <div>
+          <table>
+            <thead><tr><th>Name</th><th>Modified</th><th>Size</th></tr></thead>
+            <tbody>
+              <tr class="hit"><td>📄 Lease – signed.pdf</td><td class="k">Apr 12</td><td class="k">2.1 MB</td></tr>
+              <tr><td>📄 Move-in checklist.pages</td><td class="k">Apr 9</td><td class="k">310 KB</td></tr>
+              <tr><td>🖼️ Living room.heic</td><td class="k">Apr 3</td><td class="k">3.4 MB</td></tr>
+              <tr><td>📊 Utilities 2026.numbers</td><td class="k">Mar 28</td><td class="k">188 KB</td></tr>
+              <tr><td>📁 Receipts</td><td class="k">Mar 21</td><td class="k">—</td></tr>
+            </tbody>
+          </table>
+          <div class="ai"><span class="spark">✦</span><span>find the lease PDF from last spring</span><span class="kbd">⌘K</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="features" class="first">
+  <div class="wrap">
+    <span class="eyebrow">The browser</span>
+    <h2 class="sec">Everything you use Finder for. Faster.</h2>
+    <p class="sub">A clean sidebar, a sortable list, a breadcrumb path bar and a Quick Look pane. Search the folder you're in, or the whole Mac, including the text inside files.</p>
+    <div class="grid">
+      <div class="card"><h3>Find anything</h3><p>Spotlight-powered search across your Mac, with results you can open, reveal or drag straight into another app.</p></div>
+      <div class="card"><h3>Preview in place</h3><p>Quick Look built in. Select a file and see it on the right, no extra window.</p></div>
+      <div class="card"><h3>All the basics</h3><p>Rename, duplicate, new folder, copy path, Move to Trash. Back, forward and up, with the shortcuts you already know.</p></div>
+      <div class="card"><h3>Your places</h3><p>Recents, favourites, iCloud Drive and every connected drive, one click away.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ai" class="dark">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">The AI bar · ⌘K</span>
+      <h2 class="sec">Say what you want. Guava finds it.</h2>
+      <p class="sub">Type in plain English. Guava searches, reads and explains your files, then shows the results as rows you can open or drag. Anything that moves or trashes files asks you first, and it never touches anything outside your home folder.</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="card"><span class="tag pink">Cloud</span><h3>Claude</h3><p>The smartest option. Bring your own Anthropic API key, kept in your Keychain.</p></div>
+        <div class="card"><span class="tag">Local</span><h3>Ollama</h3><p>Fully private. The model runs on your Mac and nothing leaves it.</p></div>
+      </div>
+    </div>
+    <div class="asks">
+      <div class="ask"><span class="spark">✦</span>find the lease PDF from last spring</div>
+      <div class="ask"><span class="spark">✦</span>what's eating my disk?</div>
+      <div class="ask"><span class="spark">✦</span>summarise the notes in Downloads about the trip</div>
+      <div class="ask"><span class="spark">✦</span>move all screenshots on my Desktop into a Screenshots folder</div>
+    </div>
+  </div>
+</section>
+
+<section id="clean">
+  <div class="wrap">
+    <span class="eyebrow">Cleanup</span>
+    <h2 class="sec">Get your space back.</h2>
+    <p class="sub">Built-in tools that show you what's taking room and let you clear it. Everything goes to the Trash first, so you can always put it back.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Junk Sweep</span><p>App caches, logs, developer leftovers and used installers sitting in Downloads.</p></div>
+      <div class="card"><span class="tag">Big &amp; Forgotten</span><p>Your largest files, filtered by size and by when you last opened them.</p></div>
+      <div class="card"><span class="tag">Twins</span><p>Exact duplicates, matched by content, not just by name.</p></div>
+      <div class="card"><span class="tag">Space Map</span><p>Click through your folders to see exactly where the gigabytes went.</p></div>
+      <div class="card"><span class="tag">Uninstall Apps</span><p>Remove an app along with the settings and caches it left behind.</p></div>
+      <div class="card"><span class="tag">Background Items</span><p>See what launches when you log in, and remove the ones you don't want.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="dark download">
+  <div class="narrow">
+    <span class="eyebrow">Download</span>
+    <h2 class="sec">Try Guava on your Mac.</h2>
+    <p class="sub" style="margin:0 auto">Free while in early access. Open the disk image, drag Guava into Applications, and you're set.</p>
+    <a class="btn" href="/download/">Download for Mac</a>
+    <p class="reqs mono">macOS 14 Sonoma or newer</p>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Guava Ventures · <a href="https://guava.ventures">guava.ventures</a></span>
+    <span><a href="/help/">Help</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:support@guava.ventures">support@guava.ventures</a></span>
+  </div>
+</footer>
+</body>
+</html>

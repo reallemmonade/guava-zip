@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help · Guava</title>
+<meta name="description" content="How to use Guava: browsing, search, the AI bar, cleanup tools and settings.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body class="page">
+<div class="narrow">
+<nav class="top">
+<a class="brand" href="/"><span class="dot"></span>guava.zip</a>
+<div class="links"><a href="/help/">Help</a><a href="/privacy/">Privacy</a><a class="btn" href="/download/">Download</a></div>
+</nav>
+<main>
+<h1>Guava Help</h1>
+<p>Everything you need to get around. Can't find an answer? Email <a href="mailto:support@guava.ventures">support@guava.ventures</a>.</p>
+<ul class="toc">
+<li><a href="#start">Getting started</a></li><li><a href="#browse">Browsing</a></li><li><a href="#search">Search</a></li><li><a href="#ai">AI bar</a></li><li><a href="#clean">Cleanup</a></li><li><a href="#keys">Shortcuts</a></li><li><a href="#faq">FAQ</a></li>
+</ul>
+
+<h2 id="start">Getting started</h2>
+<p><a href="/download/">Download Guava</a>, drag it into Applications and open it. macOS asks for permission the first time Guava looks inside Desktop, Documents or Downloads. For the cleanup tools to see your whole Library, turn Guava on under System Settings › Privacy &amp; Security › Full Disk Access.</p>
+
+<h2 id="browse">Browsing</h2>
+<p>The sidebar holds Recents, your favourite folders, iCloud Drive and connected drives. Click a column header to sort. The path bar at the top shows where you are; click any part of it to jump there. Select a file to preview it in the Quick Look pane.</p>
+<p>Right-click a file to open, rename, duplicate, copy its path or move it to the Trash. Drag files out of Guava into any other app.</p>
+
+<h2 id="search">Search</h2>
+<p>Type in the search field to filter the folder you're in, or switch the scope to <strong>Entire Mac</strong> and press Return to search everywhere with Spotlight, including the text inside documents.</p>
+
+<h2 id="ai">AI bar</h2>
+<p>Press <kbd>⌘</kbd> <kbd>K</kbd> and type what you want in plain English, for example "find the lease PDF from last spring" or "what's eating my disk?". Results appear as rows you can open, reveal or drag.</p>
+<p>Before Guava moves, renames or trashes anything, it shows you exactly what it will do and waits for you to confirm. It can only work inside your home folder.</p>
+<h3>Choosing a model (Settings › AI)</h3>
+<ul>
+<li><strong>Claude (cloud).</strong> The smartest option. Create an API key at <a href="https://console.anthropic.com">console.anthropic.com</a> and paste it into Settings; Guava stores it in your Keychain. Your question, the paths of files it looks at and the text of files it reads are sent to Anthropic. API usage is billed to your Anthropic account.</li>
+<li><strong>Ollama (local).</strong> Private: nothing leaves your Mac. Install Ollama from <a href="https://ollama.com">ollama.com</a>, run <code>ollama pull llama3.1</code> in Terminal, then choose Ollama in Settings.</li>
+<li><strong>Off.</strong> The bar runs a plain Spotlight search.</li>
+</ul>
+<p>To stop the assistant reading what's inside files, turn off "Let the assistant read the text inside files" in Settings.</p>
+
+<h2 id="clean">Cleanup tools</h2>
+<p>Everything Guava removes goes to the Trash, so you can put it back until you empty the Trash.</p>
+<ul>
+<li><strong>Junk Sweep</strong> finds app caches, logs, developer leftovers and used installers in Downloads. Old iPhone backups are listed but left unticked.</li>
+<li><strong>Big &amp; Forgotten</strong> lists your largest files; filter by size and by when you last opened them.</li>
+<li><strong>Twins</strong> finds exact duplicates by comparing contents, and keeps the oldest copy.</li>
+<li><strong>Space Map</strong> shows which folders use the most space; click to drill in.</li>
+<li><strong>Uninstall Apps</strong> removes an app plus the settings, caches and containers it left in your Library.</li>
+<li><strong>Background Items</strong> lists the agents that start when you log in, and removes the ones you installed.</li>
+</ul>
+
+<h2 id="keys">Keyboard shortcuts</h2>
+<ul>
+<li><kbd>⌘</kbd> <kbd>K</kbd> AI bar</li>
+<li><kbd>⌘</kbd> <kbd>[</kbd> / <kbd>⌘</kbd> <kbd>]</kbd> Back / forward</li>
+<li><kbd>⌘</kbd> <kbd>↑</kbd> Enclosing folder</li>
+<li><kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>N</kbd> New folder</li>
+<li><kbd>⌘</kbd> <kbd>⌫</kbd> Move to Trash</li>
+<li><kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>F</kbd> Recents · <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>H</kbd> Home · <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd> Desktop</li>
+<li><kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>L</kbd> Downloads · <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>A</kbd> Applications</li>
+<li><kbd>⌘</kbd> <kbd>,</kbd> Settings</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+<h3>Does Guava replace Finder?</h3>
+<p>It sits alongside it. Finder keeps running (macOS needs it for the desktop), and you use Guava whenever you want to find or tidy files.</p>
+<h3>macOS says it can't verify Guava.</h3>
+<p>Early-access builds aren't notarized yet. See the <a href="/download/">download page</a> for the one-time Open Anyway step.</p>
+<h3>Does Guava collect data?</h3>
+<p>No. Guava has no accounts and no analytics. The only thing that leaves your Mac is what the AI bar sends to Anthropic when you choose Claude. See the <a href="/privacy/">privacy policy</a>.</p>
+</main>
+</div>
+<footer class="site">
+<div class="narrow">
+<span>© 2026 Guava Ventures · <a href="https://guava.ventures">guava.ventures</a></span>
+<span><a href="/help/">Help</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:support@guava.ventures">support@guava.ventures</a></span>
+</div>
+</footer>
+</body>
+</html>
