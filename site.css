@@ -103,3 +103,4 @@ footer.site .wrap,footer.site .narrow{display:flex;flex-wrap:wrap;gap:14px 24px;
 footer.site a{color:var(--ink-3)}
 .dark+footer.site,.home footer.site{margin-top:0;background:var(--night);border-color:#2a2236;color:var(--night-dim)}
 .home footer.site a{color:var(--night-dim)}
+blockquote.prompt{margin:8px 0 12px;padding:10px 14px;border-left:3px solid var(--guava);background:#fff;border-radius:0 10px 10px 0;color:var(--ink-2);font-size:15.5px;font-style:italic}
