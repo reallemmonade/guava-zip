@@ -28,14 +28,9 @@
 
 <h2 id="start">Getting started</h2>
 <p><a href="/download/">Download guava.zip</a>, drag it into Applications and open it. Click Allow when macOS asks about your folders.</p>
-<h3 id="full-disk-access">Turn on Full Disk Access</h3>
-<p>Lets the cleanup tools see everything. Takes 30 seconds, once.</p>
-<ol class="steps">
-<li>Open <strong>System Settings › Privacy &amp; Security › Full Disk Access</strong>.</li>
-<li>Click <strong>+</strong>, choose <strong>guava.zip</strong> in Applications, and switch it on.</li>
-<li>Quit and reopen guava.zip.</li>
-</ol>
-<p class="meta">Switched on but scans still say access is missing? Remove it with <strong>–</strong> and add it again.</p>
+<h3 id="full-disk-access">First launch: full access</h3>
+<p>guava.zip shows one optional card: <strong>Give full access</strong>. Click it, drag the guava.zip icon from the little helper window into the Full Disk Access list and switch it on; guava.zip notices and offers to reopen itself. You can skip it: everything except protected places (Mail, Messages and other apps' data) works without it, and guava.zip asks again only when a scan actually hits one.</p>
+<p><strong>If access stops working after an update:</strong> in Full Disk Access, select guava.zip, remove it with <strong>–</strong>, then drag it back in. Just switching it off and on isn't enough.</p>
 
 <h2 id="browse">Browsing</h2>
 <p>The sidebar holds Recents, your favourite folders, iCloud Drive and connected drives. Click a column header to sort. The path bar at the top shows where you are; click any part of it to jump there. Select a file to preview it in the Quick Look pane.</p>
@@ -67,7 +62,7 @@
 </ul>
 
 <h2 id="permissions">What your Mac will ask you</h2>
-<p>macOS protects your files and passwords, so it checks with you the first time guava.zip needs something. Here's what each question means and what to click. guava.zip shows this once when you first open it, and it's always in Settings › Permissions (⌘,).</p>
+<p>macOS protects your files and passwords, so it checks with you the first time guava.zip needs something. Here's what each question means and what to click. guava.zip shows this once when you first open it. It's always in <strong>Settings › Permissions</strong> (⌘,), and guava.zip gives a one-line heads-up just before each question appears.</p>
 <h3>Access to your folders</h3>
 <blockquote class="prompt">“guava.zip” would like to access files in your Desktop folder.</blockquote>
 <p>You'll see the same question for Documents, Downloads, iCloud Drive, removable volumes and network volumes. guava.zip is a file browser, so it needs to list and tidy the files there. Each folder asks once, the first time you open it.</p>
@@ -82,7 +77,7 @@
 <p><strong>What to do:</strong> click Allow to include those leftovers. Don't Allow just skips them.</p>
 <h3>Full Disk Access (optional)</h3>
 <p>Some places, like Mail, Messages and Safari data, are locked even after the prompts above. Without Full Disk Access, Junk Sweep, Space Map and Uninstall Apps skip them and their totals come out a little low. macOS never asks for this; you turn it on yourself. When a scan skips protected folders, guava.zip shows a small banner with a shortcut.</p>
-<p><strong>What to do:</strong> follow the three steps in <a href="#full-disk-access">Turn on Full Disk Access</a>.</p>
+<p><strong>What to do:</strong> click <strong>Give full access</strong> in guava.zip, drag the guava.zip icon from the helper into the list and switch it on; guava.zip offers to reopen itself. If access stops working after an update, select guava.zip, remove it with <strong>–</strong>, then drag it back in (switching it off and on isn't enough).</p>
 <h3>First open of a downloaded copy</h3>
 <blockquote class="prompt">“guava.zip” Not Opened. Apple could not verify “guava.zip” is free of malware that may harm your Mac or compromise your privacy.</blockquote>
 <p>guava.zip isn't notarized by Apple yet, so the first time you open a copy downloaded from the web, macOS stops it. Copies you build yourself don't get this.</p>
