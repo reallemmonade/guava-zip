@@ -1,10 +1,10 @@
 # guava.zip
 
-The website for Guava, the smarter Finder for macOS: a static site served by Cloudflare Pages (same setup as guava.ventures). There is no build step; every file here is published as is.
+The website for guava.zip, the smarter Finder for macOS: a static site served by Cloudflare Pages (same setup as guava.ventures). There is no build step; every file here is published as is.
 
 - `index.html`: the homepage
-- `download/`: download page and install steps; the app itself goes at `download/Guava.dmg`
-- `help/`: the help page the app opens from Help › Guava Help (`https://guava.zip/help`)
+- `download/`: download page and install steps; the app itself goes at `download/guava-zip.dmg`
+- `help/`: the help page the app opens from Help › guava.zip Help (`https://guava.zip/help`)
 - `privacy/`, `terms/`: policy pages (drafts; fill in the [BRACKETS])
 - `404.html`: shown for unknown addresses
 - `_headers`, `_redirects`: Cloudflare Pages settings (the DMG downloads as a file; `/dmg` and `/support` are short links)
@@ -14,9 +14,9 @@ The website for Guava, the smarter Finder for macOS: a static site served by Clo
 On the Mac, in the app's folder (`~/guava`):
 
 ```bash
-./scripts/make-dmg.sh                       # makes build/Guava.dmg
-cp build/Guava.dmg ~/guava-zip/download/Guava.dmg
-cd ~/guava-zip && git add download/Guava.dmg && git commit -m "Guava vX.Y" && git push
+./scripts/make-dmg.sh                       # makes build/guava-zip.dmg
+cp build/guava-zip.dmg ~/guava-zip/download/guava-zip.dmg
+cd ~/guava-zip && git add download/guava-zip.dmg && git commit -m "guava.zip vX.Y" && git push
 ```
 
 Cloudflare Pages redeploys on every push to `main`. Pages allows files up to 25 MB; if the DMG grows past that, attach it to a GitHub Release instead and point `/dmg` in `_redirects` at the release URL.
