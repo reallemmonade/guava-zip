@@ -1,7 +1,7 @@
 :root{
   --ink:#16121f;--ink-2:#4b4560;--ink-3:#7a7390;
   --paper:#fff8f4;--card:#ffffff;--line:#f0e2dc;
-  --guava:#ff5f7e;--guava-deep:#e23a5e;--leaf:#2f9e6b;--leaf-soft:#dff5ea;
+  --guava:#f0607a;--guava-deep:#e5536b;--leaf:#3e8e3a;--leaf-soft:#dff5ea;
   --night:#14101c;--night-2:#211a2d;--night-ink:#f6eef3;--night-dim:#b9adc4;
 }
 *{box-sizing:border-box}
@@ -15,7 +15,7 @@ a{color:var(--guava-deep)}a:hover{color:var(--ink)}
 /* nav */
 nav.top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:24px 0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font-weight:800;font-size:20px;letter-spacing:-.02em}
-.brand .dot{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 50% 55%,var(--guava) 0 45%,#ffd3dc 46% 58%,var(--leaf) 59%);flex:none}
+.brand .mark{width:30px;height:30px;flex:none;display:block}
 nav.top .links{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 nav.top .links a{padding:8px 12px;text-decoration:none;color:inherit;opacity:.75;font-weight:600;font-size:15px}
 nav.top .links a:hover{opacity:1}
