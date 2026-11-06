@@ -27,7 +27,15 @@
 </ul>
 
 <h2 id="start">Getting started</h2>
-<p><a href="/download/">Download guava.zip</a>, drag it into Applications and open it. macOS asks for permission the first time guava.zip looks inside Desktop, Documents or Downloads. For the cleanup tools to see your whole Library, turn guava.zip on under System Settings › Privacy &amp; Security › Full Disk Access.</p>
+<p><a href="/download/">Download guava.zip</a>, drag it into Applications and open it. Click Allow when macOS asks about your folders.</p>
+<h3 id="full-disk-access">Turn on Full Disk Access</h3>
+<p>Lets the cleanup tools see everything. Takes 30 seconds, once.</p>
+<ol class="steps">
+<li>Open <strong>System Settings › Privacy &amp; Security › Full Disk Access</strong>.</li>
+<li>Click <strong>+</strong>, choose <strong>guava.zip</strong> in Applications, and switch it on.</li>
+<li>Quit and reopen guava.zip.</li>
+</ol>
+<p class="meta">Switched on but scans still say access is missing? Remove it with <strong>–</strong> and add it again.</p>
 
 <h2 id="browse">Browsing</h2>
 <p>The sidebar holds Recents, your favourite folders, iCloud Drive and connected drives. Click a column header to sort. The path bar at the top shows where you are; click any part of it to jump there. Select a file to preview it in the Quick Look pane.</p>
@@ -74,7 +82,7 @@
 <p><strong>What to do:</strong> click Allow to include those leftovers. Don't Allow just skips them.</p>
 <h3>Full Disk Access (optional)</h3>
 <p>Some places, like Mail, Messages and Safari data, are locked even after the prompts above. Without Full Disk Access, Junk Sweep, Space Map and Uninstall Apps skip them and their totals come out a little low. macOS never asks for this; you turn it on yourself. When a scan skips protected folders, guava.zip shows a small banner with a shortcut.</p>
-<p><strong>What to do:</strong> open System Settings › Privacy &amp; Security › Full Disk Access (guava.zip's Open Full Disk Access button takes you there). Switch guava.zip on; if it isn't listed, click + and choose guava.zip in Applications. Then click Quit &amp; Reopen. After an update you may need to switch it off and on again.</p>
+<p><strong>What to do:</strong> follow the three steps in <a href="#full-disk-access">Turn on Full Disk Access</a>.</p>
 <h3>First open of a downloaded copy</h3>
 <blockquote class="prompt">“guava.zip” Not Opened. Apple could not verify “guava.zip” is free of malware that may harm your Mac or compromise your privacy.</blockquote>
 <p>guava.zip isn't notarized by Apple yet, so the first time you open a copy downloaded from the web, macOS stops it. Copies you build yourself don't get this.</p>
