@@ -5,13 +5,13 @@ The website for guava.zip, the smarter Finder for macOS: a static site served by
 - `index.html`: the homepage
 - `download/`: download page and install steps; the app itself goes at `download/guava-zip.dmg`
 - `help/`: the help page the app opens from Help › guava.zip Help (`https://guava.zip/help`)
-- `privacy/`, `terms/`: policy pages (drafts; fill in the [BRACKETS])
+- `privacy/`, `terms/`: policy pages (Terms still needs the governing state)
 - `404.html`: shown for unknown addresses
 - `_headers`, `_redirects`: Cloudflare Pages settings (the DMG downloads as a file; `/dmg` and `/support` are short links)
 
 ## Publishing a new version of the app
 
-On the Mac, in the app's folder (`~/guava`):
+On the Mac, in the app's folder (`~/Guava`):
 
 ```bash
 ./scripts/make-dmg.sh                       # makes build/guava-zip.dmg
