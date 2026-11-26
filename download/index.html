@@ -17,7 +17,7 @@
 <div class="narrow">
 <nav class="top">
 <a class="brand" href="/"><img class="mark" src="/logo.svg" alt="" width="30" height="30">guava.zip</a>
-<div class="links"><a href="/help/">Help</a><a href="/privacy/">Privacy</a><a class="btn" href="/download/">Download</a></div>
+<div class="links"><a href="/help/">Help</a><a href="/privacy/">Privacy</a><a class="btn" href="/download/" aria-current="page">Download</a></div>
 </nav>
 <main>
 <h1>Download guava.zip</h1>
@@ -28,28 +28,28 @@
 <ol class="steps">
 <li>Open <strong>guava-zip.dmg</strong> from your Downloads folder.</li>
 <li>Drag <strong>guava.zip</strong> onto the <strong>Applications</strong> folder in the window that appears.</li>
-<li>Open guava.zip from Applications or Launchpad. You can eject the disk image afterwards.</li>
+<li>Open guava.zip from Applications. You can eject the disk image afterward.</li>
 </ol>
 
 <div class="note"><p><strong>"Apple could not verify guava.zip" when you first open it?</strong> Early-access builds aren't notarized by Apple yet. Open <strong>System Settings › Privacy &amp; Security</strong>, scroll down to the message about guava.zip and click <strong>Open Anyway</strong>, then confirm. You only need to do this once.</p></div>
 
-<p>guava.zip will trigger a few macOS permission prompts (folders, Keychain, data from other apps, Full Disk Access). <a href="/help/#permissions">See what each one means and what to click</a>.</p>
+<p>guava.zip will trigger a few macOS permission prompts (folders, controlling Finder, data from other apps, background items, notifications, Full Disk Access). <a href="/help/#permissions">See what each one means and what to click</a>.</p>
 
 <h2>After installing</h2>
 <ul>
 <li>The first time guava.zip opens Desktop, Documents or Downloads, macOS asks for permission. Click Allow.</li>
 <li>For the cleanup tools to see everything, <a href="/help/#full-disk-access">turn on full access</a> from the card guava.zip shows on first launch.</li>
-<li>To use the AI bar, pick Claude or Ollama in guava.zip's Settings (<kbd>⌘</kbd> <kbd>,</kbd>). See <a href="/help/#ai">Help</a>.</li>
+<li>To use guava.zip AI, add an Anthropic API key or pick Ollama in Settings › Assistant (<kbd>⌘</kbd> <kbd>,</kbd>). See <a href="/help/#ai">Help</a>.</li>
 </ul>
 
 <h2>Uninstall</h2>
-<p>Drag guava.zip from Applications to the Trash. guava.zip keeps its settings in <code>~/Library/Preferences</code> and your API key in your Keychain; delete those too if you want nothing left behind.</p>
+<p>Drag guava.zip from Applications to the Trash. To remove everything else, also delete <code>~/Library/Preferences/zip.guava.app.plist</code>, <code>~/Library/Application Support/Guava</code> (data and API key) and <code>~/Library/LaunchAgents/zip.guava.junkcheck.plist</code>.</p>
 </main>
 </div>
 <footer class="site">
 <div class="narrow">
 <span>© 2026 Guava Ventures · <a href="https://guava.ventures">guava.ventures</a></span>
-<span><a href="/help/">Help</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:support@guava.ventures">support@guava.ventures</a></span>
+<nav aria-label="Footer"><a href="/help/">Help</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:support@guava.ventures">support@guava.ventures</a></nav>
 </div>
 </footer>
 </body>
